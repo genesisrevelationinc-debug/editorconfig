@@ -1,6 +1,12 @@
-#editorconfig.org
 root = true
 
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[{.git*,*.md}]
 [*]
 indent_style = space
 indent_size = 2
@@ -10,17 +16,4 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.md]
-root = true
-
-[*]
-charset = utf-8
-end_of_line = lf
-insert_final_newline = true
-trim_trailing_whitespace = true
-
-# Exclude patterns for file listing and search indexing
-# Analogous to Sublime's file_exclude_patterns, folder_exclude_patterns, and index_exclude_patterns
-file_exclude_patterns = *.o, *.obj, *.class, *.pyc, __pycache__/, node_modules/, .git/, dist/, build/, *.min.js, *.min.css
-folder_exclude_patterns = .git, node_modules, dist, build, .vscode, .idea, __pycache__, .pytest_cache, .tox, coverage, target, out, bin, obj disputed
-index_exclude_patterns = *.o, *.obj, *.class, *.pyc, *.log, *.tmp, *.temp, *.cache, .DS_Store, Thumbs.db
 trim_trailing_whitespace = false
