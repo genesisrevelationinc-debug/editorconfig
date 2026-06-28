@@ -1,5 +1,12 @@
-#editorconfig.org
 root = true
+
+# EditorConfig properties for excluding files from listing and search indexing
+# These properties are analogous to Sublime's file_exclude_patterns, folder_exclude_patterns, and index_exclude_patterns
+
+[*]
+file_exclude_patterns = *.log, *.tmp, *.cache
+folder_exclude_patterns = node_modules, .git, dist, build
+index_exclude_patterns = *.min.js, *.min.css, vendor/**
 
 [*]
 indent_style = space
@@ -10,16 +17,4 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.md]
-root = true
-
-[*]
-charset = utf-8
-end_of_line = lf
-insert_final_newline = true
-trim_trailing_whitespace = true
-
-# Example of new exclude properties for file listing and search indexing
-[*.min.js]
-file_exclude_patterns = true
-index_exclude_patterns = true
 trim_trailing_whitespace = false
