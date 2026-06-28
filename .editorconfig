@@ -1,30 +1,25 @@
-# EditorConfig properties for excluding files from listing and indexing
-# See: https://github.com/editorconfig/editorconfig/issues/228
-
-# Root editorconfig file
+#editorconfig.org
 root = true
 
 [*]
-[*]
+indent_style = space
+indent_size = 2
 end_of_line = lf
-insert_final_newline = true
-trim_trailing_whitespace = true
-
-# Files and patterns to exclude from file listings (e.g., folder tree panes)
-# Analogous to Sublime Text's file_exclude_patterns and folder_exclude_patterns
-file_exclude_patterns = *.log, *.tmp, .DS_Store, Thumbs.db
-folder_exclude_patterns = .git, .svn, .hg, node_modules, .idea, .vscode, __pycache__, .pytest_cache, build, dist, target, out, .next, .nuxt
-
-# Files and patterns to exclude from search indexing
-# Analogous to Sublime Text's index_exclude_patterns
-index_exclude_patterns = *.min.js, *.min.css, *.map
-
-# Combined: compilation artifacts and generated files to exclude from both listing and indexing
-exclude_from_listing = true
-exclude_from_index = true
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.md]
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Exclude patterns for file listing and search indexing
+file_exclude_patterns = .git, .svn, .hg, .DS_Store
+folder_exclude_patterns = .git, .svn, node_modules, .tox, build, dist, __pycache__, .pytest_cache
+index_exclude_patterns = *.log, *.tmp, *.bak, *.swp, *~, .*.swp
 trim_trailing_whitespace = false
