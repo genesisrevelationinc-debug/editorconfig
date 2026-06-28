@@ -1,12 +1,5 @@
+#editorconfig.org
 root = true
-
-# EditorConfig properties for excluding files from listing and search indexing
-# These properties are analogous to Sublime's file_exclude_patterns, folder_exclude_patterns, and index_exclude_patterns
-
-[*]
-file_exclude_patterns = *.log, *.tmp, *.cache
-folder_exclude_patterns = node_modules, .git, dist, build
-index_exclude_patterns = *.min.js, *.min.css, vendor/**
 
 [*]
 indent_style = space
@@ -17,4 +10,15 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.md]
+root = true
+
+# Example EditorConfig file demonstrating the proposed file exclusion properties
+# These properties control which files and folders are displayed in listings
+# and which files are indexed for search
+
+[*]
+file_exclude_patterns = *.log, *.tmp, *.cache, *.o, *.obj, *.pyc, __pycache__/**
+folder_exclude_patterns = node_modules, .git, dist, build, .vscode, .idea, target, out
+index_exclude_patterns = *.min.js, *.min.css, vendor/**, third_party/**, *.generated.*
+
 trim_trailing_whitespace = false
