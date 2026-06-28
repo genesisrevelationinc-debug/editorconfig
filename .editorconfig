@@ -1,12 +1,6 @@
+#editorconfig.org
 root = true
 
-[*]
-charset = utf-8
-end_of_line = lf
-insert_final_newline = true
-trim_trailing_whitespace = true
-
-[{.git*,*.md}]
 [*]
 indent_style = space
 indent_size = 2
@@ -16,4 +10,23 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.md]
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Property for files that should not be listed or indexed for search
+# Analogous to Sublime's file_exclude_patterns, folder_exclude_patterns, and index_exclude_patterns
+
+# Comma-separated list of file globs to exclude from file listings
+file_exclude_patterns = *.o, *.obj, *.class, *.pyc, __pycache__/
+
+# Comma-separated list of folder globs to exclude from file listings
+folder_exclude_patterns = node_modules/, .git/, build/, dist/, .idea/, .vscode/
+
+# Comma-separated list of file/folder globs to exclude from search indexing
+index_exclude_patterns = *.o, *.obj, *.class, *.pyc, __pycache__/, node_modules/, .git/, build/, dist/
 trim_trailing_whitespace = false
