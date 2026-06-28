@@ -1,12 +1,16 @@
 ### This repository is placeholder used for [issue tracking][] for format issues and other universal [EditorConfig][] issues, as well as the [wiki pages][].
 
-## New Property Proposal: File Exclusion Patterns
+## New Properties for File Exclusion
 
-This proposal adds three new properties to the EditorConfig specification for controlling file visibility in listings and search indexing:
+This repository now includes proposed properties for excluding files from listings and search indexing:
 
-- `file_exclude_patterns`: Comma-separated list of file globs that should not be displayed in file listings
-- `folder_exclude_patterns`: Comma-separated list of folder globs that should not be displayed in file listings  
-- `index_exclude_patterns`: Comma-separated list of file globs that should not be indexed for search
+| Property | Description |
+|----------|-------------|
+| `file_exclude_patterns` | Comma-separated list of file patterns to exclude from file listings (e.g., folder tree panes). Analogous to Sublime Text's `file_exclude_patterns`. |
+| `folder_exclude_patterns` | Comma-separated list of folder patterns to exclude from file listings. Analogous to Sublime Text's `folder_exclude_patterns`. |
+| `index_exclude_patterns` | Comma-separated list of file patterns to exclude from search indexing. Analogous to Sublime Text's `index_exclude_patterns`. |
+| `exclude_from_listing` | Boolean indicating whether matched files should be excluded from file listings. |
+| `exclude_from_index` | Boolean indicating whether matched files should be excluded from search indexing. |
 
 ### Example Usage
 
