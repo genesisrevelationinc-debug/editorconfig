@@ -10,16 +10,19 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 
 [*.md]
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
 root = true
 
+# All files
 [*]
 charset = utf-8
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-# Exclude patterns for file listing and search indexing
-file_exclude_patterns = .git, .svn, .hg, .DS_Store
-folder_exclude_patterns = .git, .svn, node_modules, .tox, build, dist, __pycache__, .pytest_cache
-index_exclude_patterns = *.log, *.tmp, *.bak, *.swp, *~, .*.swp
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
 trim_trailing_whitespace = false
